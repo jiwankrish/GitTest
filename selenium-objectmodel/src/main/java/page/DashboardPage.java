@@ -16,13 +16,8 @@ public class DashboardPage {
 	@FindBy(how=How.XPATH, using= "//ul[@id='side-menu']/li[2]/ul/li[1]/a") WebElement ADD_CONTACT;
 	@FindBy(how=How.ID, using= "account") WebElement FULL_NAME;
 	@FindBy(how=How.ID, using= "company") WebElement COMPANY;
-<<<<<<< HEAD
 	@FindBy(how=How.ID, using= "email") WebElement EMAIL;
-	@FindBy(how=How.LINK_TEXT, using= "phone") WebElement PHONE;
-=======
-	@FindBy(how=How.XPATH, using= "email") WebElement EMAIL;
 	@FindBy(how=How.ID, using= "phone") WebElement PHONE;
->>>>>>> develop-jiwan
 	@FindBy(how=How.ID, using= "address") WebElement ADDRESS;
 	@FindBy(how=How.NAME, using= "city") WebElement CITY;
 	@FindBy(how=How.ID, using= "state") WebElement STATE;
