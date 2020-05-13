@@ -17,7 +17,7 @@ public class DashboardPage {
 	@FindBy(how=How.ID, using= "account") WebElement FULL_NAME;
 	@FindBy(how=How.ID, using= "company") WebElement COMPANY;
 	@FindBy(how=How.NAME, using= "email") WebElement EMAIL;
-	@FindBy(how=How.ID, using= "phone") WebElement PHONE;
+	@FindBy(how=How.NAME, using= "phone") WebElement PHONE;
 	@FindBy(how=How.ID, using= "address") WebElement ADDRESS;
 	@FindBy(how=How.ID, using= "city") WebElement CITY;
 	@FindBy(how=How.ID, using= "state") WebElement STATE;
