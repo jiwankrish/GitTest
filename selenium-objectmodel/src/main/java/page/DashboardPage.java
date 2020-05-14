@@ -14,7 +14,7 @@ public class DashboardPage {
 	}
 	@FindBy(how=How.XPATH, using= "//ul[@id='side-menu']/li[2]/a/span[1]") WebElement CRM;
 	@FindBy(how=How.XPATH, using= "//ul[@id='side-menu']/li[2]/ul/li[1]/a") WebElement ADD_CONTACT;
-	@FindBy(how=How.NAME, using= "account") WebElement FULL_NAME;
+	@FindBy(how=How.ID, using= "account") WebElement FULL_NAME;
 	@FindBy(how=How.ID, using= "company") WebElement COMPANY;
 	@FindBy(how=How.NAME, using= "email") WebElement EMAIL;
 	@FindBy(how=How.ID, using= "phone") WebElement PHONE;
