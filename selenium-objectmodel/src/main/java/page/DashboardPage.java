@@ -19,7 +19,7 @@ public class DashboardPage {
 	@FindBy(how=How.ID, using= "email") WebElement EMAIL;
 	@FindBy(how=How.ID, using= "phone") WebElement PHONE;
 	@FindBy(how=How.ID, using= "address") WebElement ADDRESS;
-	@FindBy(how=How.ID, using= "city") WebElement CITY;
+	@FindBy(how=How.NAME, using= "city") WebElement CITY;
 	@FindBy(how=How.ID, using= "state") WebElement STATE;
 	@FindBy(how=How.ID, using= "zip") WebElement ZIP_CODE;
 	@FindBy(how=How.XPATH, using= "//select[@id='country']/option[233]") WebElement COUNTRY;
