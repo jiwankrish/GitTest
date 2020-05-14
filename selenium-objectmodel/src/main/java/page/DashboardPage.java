@@ -17,7 +17,7 @@ public class DashboardPage {
 	@FindBy(how=How.XPATH, using= "account") WebElement FULL_NAME;
 	@FindBy(how=How.XPATH, using= "company") WebElement COMPANY;
 	@FindBy(how=How.XPATH, using= "email") WebElement EMAIL;
-	@FindBy(how=How.XPATH, using= "phone") WebElement PHONE;
+	@FindBy(how=How.NAME, using= "phone") WebElement PHONE;
 	@FindBy(how=How.XPATH, using= "address") WebElement ADDRESS;
 	@FindBy(how=How.XPATH, using= "city") WebElement CITY;
 	@FindBy(how=How.XPATH, using= "state") WebElement STATE;
