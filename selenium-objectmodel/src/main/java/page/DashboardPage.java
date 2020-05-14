@@ -14,15 +14,7 @@ public class DashboardPage {
 	}
 	@FindBy(how=How.XPATH, using= "//ul[@id='side-menu']/li[2]/a/span[1]") WebElement CRM;
 	@FindBy(how=How.XPATH, using= "//ul[@id='side-menu']/li[2]/ul/li[1]/a") WebElement ADD_CONTACT;
-<<<<<<< HEAD
-	@FindBy(how=How.ID, using= "account") WebElement FULL_NAME;
-	@FindBy(how=How.ID, using= "company") WebElement COMPANY;
-	@FindBy(how=How.NAME, using= "email") WebElement EMAIL;
-	@FindBy(how=How.NAME, using= "phone") WebElement PHONE;
-	@FindBy(how=How.NAME, using= "address") WebElement ADDRESS;
-	@FindBy(how=How.NAME, using= "city") WebElement CITY;
-	@FindBy(how=How.ID, using= "state") WebElement STATE;
-=======
+
 	@FindBy(how=How.XPATH, using= "account") WebElement FULL_NAME;
 	@FindBy(how=How.XPATH, using= "company") WebElement COMPANY;
 	@FindBy(how=How.XPATH, using= "email") WebElement EMAIL;
@@ -30,7 +22,6 @@ public class DashboardPage {
 	@FindBy(how=How.XPATH, using= "address") WebElement ADDRESS;
 	@FindBy(how=How.XPATH, using= "city") WebElement CITY;
 	@FindBy(how=How.XPATH, using= "state") WebElement STATE;
->>>>>>> master
 	@FindBy(how=How.ID, using= "zip") WebElement ZIP_CODE;
 	@FindBy(how=How.XPATH, using= "//select[@id='country']/option[233]") WebElement COUNTRY;
 	//@FindBy(how=How.XPATH, using= "//form[@id='rform']/div[10]/div/span/span[1]/span/ul") WebElement TAG;
