@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -15,11 +16,11 @@ public class DashboardPage {
 	@FindBy(how=How.XPATH, using= "//ul[@id='side-menu']/li[2]/a/span[1]") WebElement CRM;
 	@FindBy(how=How.XPATH, using= "//ul[@id='side-menu']/li[2]/ul/li[1]/a") WebElement ADD_CONTACT;
 	@FindBy(how=How.ID, using= "account") WebElement FULL_NAME;
-	@FindBy(how=How.NAME, using= "company") WebElement COMPANY;
+	@FindBy(how=How.ID, using= "company") WebElement COMPANY;
 	@FindBy(how=How.ID, using= "email") WebElement EMAIL;
 	@FindBy(how=How.ID, using= "phone") WebElement PHONE;
 	@FindBy(how=How.ID, using= "address") WebElement ADDRESS;
-	@FindBy(how=How.NAME, using= "city") WebElement CITY;
+	@FindBy(how=How.ID, using= "city") WebElement CITY;
 	@FindBy(how=How.ID, using= "state") WebElement STATE;
 	@FindBy(how=How.ID, using= "zip") WebElement ZIP_CODE;
 	@FindBy(how=How.XPATH, using= "//select[@id='country']/option[233]") WebElement COUNTRY;
@@ -36,10 +37,8 @@ public class DashboardPage {
 	
 	public void addContactData(String fullName, String companyName, String email, String phone, String address, String city, String state, String zip) {
 		//Select SEL_COUNTRY = new Select(COUNTRY);
-
 		WebDriverWait explicitWait = new WebDriverWait(driver, 60);	
-		explicitWait.until(ExpectedConditions.visibilityOf(STATE));
-
+		explicitWait.until(ExpectedConditions.invisibilityOf(STATE));
 		FULL_NAME.sendKeys(fullName);
 		COMPANY.sendKeys(companyName);
 		EMAIL.sendKeys(email);
