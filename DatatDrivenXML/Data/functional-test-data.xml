@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="functional-test-data"> <!-- Name of the test suite -->	
+	<test name="LoginTest"> <!-- Name of the test case -->
+		<parameter name="userName" value="techfiosdemo@gmail.com" /> <!-- Values to be passed -->
+		<parameter name="password" value="abc123" />
+		<parameter name="fullName" value="SharmaTest1" />
+		<parameter name="companyName" value="TestingCompany" />
+		<parameter name="email" value="abc123@gmail.com" />
+		<parameter name="phone" value="1234567890" />
+		<parameter name="address" value="Test Dr." />
+		<parameter name="city" value="Irving" />
+		<parameter name="state" value="TX" />
+		<parameter name="zip" value="75038" />
+		<parameter name="country" value="India" />
+		<classes>
+			<class name="test.LoginTest" /> <!-- Class name to inject the values into --> 
+			<class name="test.AddAccountTestXML" />
+		</classes>
+	</test>
+</suite>

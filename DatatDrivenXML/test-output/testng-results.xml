@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="functional-test-data" duration-ms="18574" started-at="2020-05-17T12:51:39 CDT" finished-at="2020-05-17T12:51:58 CDT">
+    <groups>
+    </groups>
+    <test name="LoginTest" duration-ms="18574" started-at="2020-05-17T12:51:39 CDT" finished-at="2020-05-17T12:51:58 CDT">
+      <class name="test.AddAccountTestXML">
+        <test-method status="PASS" signature="addContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:test.AddAccountTestXML@4f063c0a]" name="addContact" duration-ms="18527" started-at="2020-05-17T12:51:39 CDT" finished-at="2020-05-17T12:51:58 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[techfiosdemo@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SharmaTest1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[TestingCompany]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[abc123@gmail.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Test Dr.]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Irving]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[TX]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[75038]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addContact -->
+      </class> <!-- test.AddAccountTestXML -->
+    </test> <!-- LoginTest -->
+  </suite> <!-- functional-test-data -->
+</testng-results>
