@@ -17,6 +17,8 @@ target/**
 **/target/
 */target/
 test-output/
+**/test-output/
+*/test-output/
 target/
 */target/**
 target/classes/META-INF/MANIFEST.MF
