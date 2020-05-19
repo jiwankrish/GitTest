@@ -6,12 +6,12 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import page.AddAccountPage;
+import page.AddContactsPage;
 import page.LoginPage;
 import util.BrowserFactory;
 import util.ExcelReader;
 
-public class AddAccountTestXML {
+public class AddContactsTestXML {
 	WebDriver driver;
 	
 	@Test(priority = 1)
@@ -25,7 +25,7 @@ public class AddAccountTestXML {
 		login.clikSignin();		
 		
 		// Create new Object of AddAccountPage class to call methods from this page class
-		AddAccountPage addAccount = PageFactory.initElements(driver, AddAccountPage.class);
+		AddContactsPage addAccount = PageFactory.initElements(driver, AddContactsPage.class);
 		// Click CRM and AddContact
 		addAccount.clickCRM();
 		addAccount.clickAddContact();

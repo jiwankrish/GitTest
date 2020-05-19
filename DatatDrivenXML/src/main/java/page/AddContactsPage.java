@@ -8,9 +8,9 @@ import org.openqa.selenium.support.ui.Select;
 
 import util.ExplicitWait;
 
-public class AddAccountPage {
+public class AddContactsPage {
 	WebDriver driver;
-	public AddAccountPage(WebDriver driver) {
+	public AddContactsPage(WebDriver driver) {
 		this.driver= driver;
 	}
 	
