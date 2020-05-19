@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28076" started-at="2020-05-17T19:56:59 CDT" finished-at="2020-05-17T19:57:27 CDT">
+  <suite name="Default suite" duration-ms="18586" started-at="2020-05-18T23:18:57 CDT" finished-at="2020-05-18T23:19:16 CDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28076" started-at="2020-05-17T19:56:59 CDT" finished-at="2020-05-17T19:57:27 CDT">
-      <class name="test.AddAccountTestExcel">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:test.AddAccountTestExcel@5bf0d49]" name="startUp" is-config="true" duration-ms="8643" started-at="2020-05-17T19:56:59 CDT" finished-at="2020-05-17T19:57:07 CDT">
+    <test name="Default test" duration-ms="18586" started-at="2020-05-18T23:18:57 CDT" finished-at="2020-05-18T23:19:16 CDT">
+      <class name="test.AddContactsTestExcel">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:test.AddContactsTestExcel@5bf0d49]" name="startUp" is-config="true" duration-ms="8156" started-at="2020-05-18T23:18:57 CDT" finished-at="2020-05-18T23:19:05 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="loginTest()[pri:1, instance:test.AddAccountTestExcel@5bf0d49]" name="loginTest" duration-ms="2476" started-at="2020-05-17T19:57:07 CDT" finished-at="2020-05-17T19:57:10 CDT">
+        <test-method status="PASS" signature="loginTest()[pri:1, instance:test.AddContactsTestExcel@5bf0d49]" name="loginTest" duration-ms="2146" started-at="2020-05-18T23:19:05 CDT" finished-at="2020-05-18T23:19:08 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="addContact()[pri:2, instance:test.AddAccountTestExcel@5bf0d49]" name="addContact" duration-ms="16888" started-at="2020-05-17T19:57:10 CDT" finished-at="2020-05-17T19:57:27 CDT">
+        <test-method status="PASS" signature="addContact()[pri:2, instance:test.AddContactsTestExcel@5bf0d49]" name="addContact" duration-ms="8229" started-at="2020-05-18T23:19:08 CDT" finished-at="2020-05-18T23:19:16 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addContact -->
-      </class> <!-- test.AddAccountTestExcel -->
+      </class> <!-- test.AddContactsTestExcel -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
