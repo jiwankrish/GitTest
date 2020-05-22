@@ -12,6 +12,8 @@ public class NewServicesPage {
 			this.driver= driver;
 			
 		}
+		// creating Elements
+		
 		@FindBy(linkText = "List Services") WebElement LIST_SERVICES_BUTTON;
 		@FindBy(id = "name") WebElement NAME_FIELD;
 		@FindBy(id = "sales_price") WebElement SALES_PRICE_FIELD;
@@ -19,7 +21,7 @@ public class NewServicesPage {
 		@FindBy(id = "description") WebElement DESCRIPTION_FIELD;
 		@FindBy(id = "submit") WebElement SUBMIT_BUTTON;
 		
-		
+		//Methods
 		public void clickONListServices() {
 			LIST_SERVICES_BUTTON.click();
 			
