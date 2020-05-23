@@ -11,6 +11,7 @@ public class NewProductPage {
 		this.driver= driver;
 		
 	}
+	//creating Elements
 	@FindBy(linkText = "List Products") WebElement LIST_PRODUCTS_BUTTON;
 	@FindBy(id = "name") WebElement NAME_FIELD;
 	@FindBy(id = "sales_price") WebElement SALES_PRICE_FIELD;
