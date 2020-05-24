@@ -19,7 +19,7 @@ public class NewProductPage {
 	@FindBy(id = "description") WebElement DESCRIPTION_FIELD;
 	@FindBy(id = "submit") WebElement SUBMIT_BUTTON;
 	
-	
+	//Creating methods 
 	public void clickONListProducts() {
 		LIST_PRODUCTS_BUTTON.click();
 		
