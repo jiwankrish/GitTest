@@ -15,6 +15,7 @@ WebDriver driver;
 	
 	@FindBy(xpath = "//a[contains(text(),' Add Product')]")WebElement ADD_PRODUCTS_BUTTON_LOCATOR;
 	//need to create another page for service
+	
 	//@FindBy(xpath = "//a[contains(text(),' Add Service')]")WebElement ADD_SERVICE_BUTTON_LOCATOR;
 	@FindBy(xpath ="//input[@id = 'txtsearch']") WebElement SEARCH_BAR_LOCATOR;
 	@FindBy(xpath ="//button[@id = 'search']") WebElement SEARCH_BUTTON_LOCATOR;
