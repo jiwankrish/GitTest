@@ -7,6 +7,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import page.LoginPage;
+import page.SalesPage;
 import util.BrowserFactory;
 
 public class LoginTest {
@@ -43,5 +44,12 @@ public class LoginTest {
 		
 		Thread.sleep(5000);
 		BrowserFactory.tearDown();
+	}
+	
+	@Test(priority=2)
+	public void SalesTest(String userName, String password) throws InterruptedException {
+		// Initialized LoginPage Class and use its methods.
+		SalesPage login = PageFactory.initElements(driver,SalesPage .class);
+		
 	}
 }
