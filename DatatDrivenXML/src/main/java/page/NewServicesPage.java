@@ -21,7 +21,7 @@ public class NewServicesPage {
 		@FindBy(id = "description") WebElement DESCRIPTION_FIELD;
 		@FindBy(id = "submit") WebElement SUBMIT_BUTTON;
 		
-		//Methods
+		//Creating methods
 		public void clickONListServices() {
 			LIST_SERVICES_BUTTON.click();
 			
