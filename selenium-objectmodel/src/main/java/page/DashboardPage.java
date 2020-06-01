@@ -13,6 +13,7 @@ public class DashboardPage {
 	public DashboardPage(WebDriver driver) {
 		this.driver= driver;
 	}
+	//creating Elements
 	@FindBy(how=How.XPATH, using= "//ul[@id='side-menu']/li[2]/a/span[1]") WebElement CRM;
 	@FindBy(how=How.XPATH, using= "//ul[@id='side-menu']/li[2]/ul/li[1]/a") WebElement ADD_CONTACT;
 	@FindBy(how=How.ID, using= "account") WebElement FULL_NAME;
