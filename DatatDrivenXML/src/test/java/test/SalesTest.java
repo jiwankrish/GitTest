@@ -1,24 +1,19 @@
 package test;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
-
-import page.LoginPage;
-import page.SalesPage;
 import util.BrowserFactory;
 
 public class SalesTest {
 	WebDriver driver;
-	
+
 	@BeforeTest
 	public void startUp() {
 		// Call launchBrowser Method of LaunchBrowser Class
 		driver = BrowserFactory.launchBrowser();
 	}
-	
+
 //	@Test(priority = 1)
 //	public void loginTest() {
 //		// Initialized LoginPage Class and use its methods.

@@ -7,7 +7,6 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import page.LoginPage;
-import page.SalesPage;
 import util.BrowserFactory;
 
 public class LoginTest {
@@ -15,7 +14,8 @@ public class LoginTest {
 	WebDriver driver;
 
 	// Create Default Constructor
-	public LoginTest() {}
+	public LoginTest() {
+	}
 
 	// Create parameterized Constructor
 	public LoginTest(WebDriver driver) {
@@ -34,22 +34,21 @@ public class LoginTest {
 	}
 
 	@Test(priority = 1)
-	@Parameters({"userName", "password"})
+	@Parameters({ "userName", "password" })
 	public void loginTest(String userName, String password) throws InterruptedException {
 		// Initialized LoginPage Class and use its methods.
 		LoginPage login = PageFactory.initElements(driver, LoginPage.class);
 		login.enterUser(userName);
 		login.enterPassword(password);
 		login.clikSignin();
-		
+
 		Thread.sleep(5000);
 		BrowserFactory.tearDown();
 	}
-	
-	@Test(priority=2)
+
+	@Test(priority = 2)
 	public void SalesTest(String userName, String password) throws InterruptedException {
-		// Initialized LoginPage Class and use its methods.
-		SalesPage login = PageFactory.initElements(driver,SalesPage .class);
-		
+		// Initialized LoginPage Class and use its methods
+
 	}
 }
