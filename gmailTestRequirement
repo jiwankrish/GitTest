@@ -1,0 +1,10 @@
+Test Gmail Login
+Case 1: Login into Gmail using valid credentials
+Case 2: Verify Email field patterns
+Requirements: 
+a.	Email should be only letters, numbers and period “.”
+b.	Email should start with letters or numbers only
+Case 3: Verify password
+a.	Password should contain at least 8 characters including one upper case, one lower case, one number and one special character.
+Test Create Gmail Account
+Use same requirements
