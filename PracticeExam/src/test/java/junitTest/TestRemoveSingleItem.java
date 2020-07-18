@@ -2,17 +2,17 @@ package junitTest;
 
 import java.util.List;
 
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import pages.TestPage;
 import util.BrowserFactory;
 
-public class TestAllCheck {
+public class TestRemoveSingleItem {
 	WebDriver driver;
 
 	@Before
@@ -21,25 +21,31 @@ public class TestAllCheck {
 	}
 
 	@Test
-	public void testAllCheck() {
+	public void testSingelItemRemoval() {
 		// Instantiate TestPage Class
 		TestPage testPage = PageFactory.initElements(driver, TestPage.class);
 
 		// Call clickToggleAll method
 		testPage.clickToggleAll();
 
-		// Get List of items to validate
+		// Get List of check-boxes
 		List<WebElement> checkBoxes = testPage.validateSelection();
 
-		// If Item is available check if selected or enable else print a message
-		// items.get(0).click();
+		// Get List of items
+		List<WebElement> items = testPage.listofItems();
+
+		// Provide the index of item to delete. Index must not be out of bound
+		int itemToDelete = 0;
+
+		// Deleting item and validating if deleted
 		if (checkBoxes.size() > 0) {
-			// items.get(0).click();// For testing the condition
-			for (int i = 0; i < checkBoxes.size(); i++) {
-				Assert.assertTrue("At least one of the item is not selected", checkBoxes.get(i).isSelected());
-			}
+			String itemTest = items.get(itemToDelete).getText();
+			checkBoxes.get(itemToDelete).click();
+			testPage.clickRemove();
+			Assert.assertNotEquals(items.get(itemToDelete).getText(), itemTest);
 		} else {
 			System.out.println("No element available to select");
 		}
 	}
+
 }
