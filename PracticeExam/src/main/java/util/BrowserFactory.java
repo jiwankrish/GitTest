@@ -1,6 +1,5 @@
 package util;
 
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -11,7 +10,7 @@ public class BrowserFactory {
 
 	public static WebDriver startBrowser() {
 		WebDriverManager.chromedriver().setup();
-		driver= new ChromeDriver();
+		driver = new ChromeDriver();
 		driver.get("http://techfios.com/test/101/");
 		driver.manage().window().maximize();
 		return driver;
